@@ -113,6 +113,7 @@ body{
     background-color: #9fff9c;
     border: none;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .main-cont{
