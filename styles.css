@@ -61,7 +61,7 @@ body{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%);
     padding: 20px;
     background: #f0eef1;
     border: 1px solid #ccc;

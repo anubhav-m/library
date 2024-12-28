@@ -95,3 +95,28 @@ overlay.addEventListener("click", ()=>{
   overlay.style.display = "none";
 })
 
+document.querySelector(".overlay-form-cont").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission
+
+  // Retrieve values from the form
+  const title = document.querySelector('.title').value;
+  const author = document.querySelector('.author').value;
+  const pages = document.querySelector('.pages').value;
+  const isRead = document.querySelector('#is-read').checked;
+
+  // Create a new Book object using the retrieved values
+  const newBook = new Book(title, author, pages, isRead);
+  
+  // Add the new book to the library
+  addBookToLibrary(newBook);
+
+
+  // Close the overlay form after submission 
+  overlayForm.style.display = "none";
+  overlay.style.display = "none";
+
+  // Display updated books
+  displayBooks(myLibrary);
+
+  console.log(myLibrary);
+});
