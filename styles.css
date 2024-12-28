@@ -19,7 +19,7 @@ body{
 }
 
 .header{
-    width: 99vw;
+    width: 100vw;
     height: 95px;
     background-color: white;
     display: flex;
@@ -119,7 +119,7 @@ body{
     display: grid;
     align-self: center;
     width: 1300px;
-    max-width: 95vw;
+    max-width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(300px, 400px)); 
     grid-template-rows: auto;
     gap: 50px;

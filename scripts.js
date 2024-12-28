@@ -15,13 +15,12 @@ function addBookToLibrary(bookObj) {
   myLibrary.push(bookObj);
 }
 
-addBookToLibrary(new Book("abc", "a", 23, true));
-addBookToLibrary(new Book("def", "b", 343, false));
-addBookToLibrary(new Book("ghi", "c", 533, false));
-addBookToLibrary(new Book("jkl", "d", 33, true));
-addBookToLibrary(new Book("mno", "e", 653, false));
-addBookToLibrary(new Book("pqr", "f", 24, true));
-addBookToLibrary(new Book("stu", "g", 64, false));
+addBookToLibrary(new Book("To Kill a Mockingbird", "Harper Lee", 281, true));
+addBookToLibrary(new Book("The Great Gatsby", "F. Scott Fitzgerald", 180, false));
+addBookToLibrary(new Book("Pride and Prejudice", "Jane Austen", 279, false));
+addBookToLibrary(new Book("The Hobbit", "J.R.R. Tolkien", 310, false));
+addBookToLibrary(new Book("Brave New World", "Aldous Huxley", 268, false));
+addBookToLibrary(new Book("Atomic Habits", "James Clear", 320, true));
 
 console.log(myLibrary);
 
